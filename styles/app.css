@@ -1,0 +1,199 @@
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{ -webkit-box-sizing: inherit; box-sizing: inherit}
+a {
+    text-decoration: none;
+}
+body {
+    font-family: "jost",sans-serif;
+    background: #F0F9FF;
+}
+
+/*
+- App Styles
+*/
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+/*- NavBar style */
+
+.header{
+
+}
+.nav{
+    padding: 30px 0;
+}
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 150px;
+}
+.logo_img{
+    width: 100%;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu_item{
+    margin-left: 25px;
+}
+.menu_link{
+    text-decoration: none;
+    color: #160B38;
+    font-family: "Jost-Medium",sans-serif;
+    display: block;
+
+}
+.menu_link-active{
+    background-color: #3B1C99;
+    color: #fff;
+    padding: 15px 25px;
+    font-family: "Jost-Bold",sans-serif;
+    border-radius: 13px 13px 0 13px;
+}
+
+.nav_icon {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+/* - content Style*/
+
+.main{
+    margin-top: 40px;
+}
+.page{
+
+}
+.page-content{
+    width: 50%;
+}
+.page-content_title{
+    color: #160B38;
+    font-size: 70px;
+    position: relative;
+}
+.page-content_title::before {
+    content: "";
+    position: absolute;
+    left: -22px;
+    top: -12px;
+    background: url("../images/shape-2.svg") no-repeat;
+    width: 30px;
+    height: 30px;
+    background-size: 100%;
+}
+.page-content_caption{
+    color: #160B38;
+    font-family: "Jost-Medium",sans-serif;
+    font-size: 22px;
+    line-height: 35px;
+    margin: 15px 0 25px 0;
+}
+.page-content_link{
+    background-color: #8054F6;
+    color: #fff;
+    padding: 15px 25px;
+    font-family: "Jost-Bold",sans-serif;
+    border-radius: 13px 13px 0 13px;
+    display: block;
+    max-width: 160px;
+    text-align: center;
+}
+.page_banner{
+    width: 50%;
+}
+.page_img{
+    width: 100%;
+}
+
+/*
+- App MediaQuery
+*/
+
+@media screen and (max-width: 1200px){
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .container {
+        max-width: 540px;
+    }
+    .nav_icon {
+        display: block;
+    }
+    .menu {
+        flex-direction: column;
+        position: fixed;
+        left: -220px;
+        top: 0;
+        bottom: 0;
+        z-index: 100;
+        padding: 25px;
+        width: 220px;
+        background: #fff;
+        transition: left 0.5s ease-in-out;
+    }
+    .menu_item {
+        margin-left: 0;
+        margin-bottom: 22px;
+    }
+    .main {
+        margin-top: 20px;
+    }
+    .page-content {
+        order: 1;
+        width: 100%;
+    }
+    .page_banner {
+        order: 0;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .page_img {
+        max-width: 370px;
+    }
+
+}
+
+@media screen and (max-width: 576px){
+    .container {
+        max-width: 100%;
+        margin: 0 35px;
+    }
+    .page-content_title{
+        font-size: 50px;
+    }
+    .page-content_caption {
+        font-size: 16px;
+    }
+}
