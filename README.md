@@ -4,17 +4,16 @@
 
 <p>This is a simple page 404 not found</p>
 <p align="center">
-  <a href="" rel="noopener">
-  <p>Desktop</p>
- <img src="images/404.PNG" alt="desktop"></a>
+ <h3>Desktop</h3>
+ <img src="images/404.PNG" alt="desktop" align="center">
 
-<p>Mobile</p>
- <img src="images/mobile-404.PNG" alt="Mobile"></a>
-</p>
+<h3>Mobile</h3>
+<img src="images/mobile-404.PNG" alt="Mobile" align="center">
 
-<p>Mobile Menu</p>
- <img src="images/menuMobile-404.PNG" alt="Mobile"></a>
-</p>
+
+<h3>Mobile Menu</h3>
+<img src="images/menuMobile-404.PNG" alt="Mobile" align="center">
+
 
 ---
 
