@@ -22,13 +22,7 @@
 
 Displays a simple 404 not found demo. Designed with HTML5, CSS, Flexbox and Media queries.
 
-## Demo
-
-
 
 ## Usage
 
 You can use it for pages that do not exist in the website.
-
-
-
